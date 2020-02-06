@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css"/>
+        <title>ItalianFood</title>
+    </head>
+    <body>
+
+        <header>
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" />
+            <div class="logo1">ItalianFood</div>
+            <ol>
+                <li><a href="#">Menu</a>
+                    <ul>
+                        <li><a href="#Omnie">O mnie</a></li>
+                        <li><a href="#recipe">Przepisy</a></li>
+                        <li><a href="#Kontakt">Kontakt</a></li>
+                    </ul>
+                </li>
+            </ol>
+            <div class="header2">
+                <h3>Kuchnia włoska w kilku zdaniach</h3>
+                <p>
+                        Kuchnia włoska charakteryzuje się korzystaniem z dużej ilości warzyw i przypraw takich jak oregano, bazylia, estragon, tymianek, a także używaniem parmezanu.
+                </p>
+                <a href="#kuchnia">Czytaj więcej ...</a>
+            </div>
+        </header>
+
+        <main>
+
+            <article id="Omnie">
+                <div class="text">
+                    <h2>Aleksandra Mazur</h2>
+                    <p>Jestem studentką informatyki na Akedemii Górniczo-Hutniczej im. Stanisława Staszica w Krakowie. Odkąd pamiętam pasjonuje się gotowaniem. Szczególnie bliska mi jest kultura i kuchnia włoska. Z tego właśnie powodu powstał pomysł na podzielenie się moją pasją z innymi.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1571805529673-0f56b922b359?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+            </article>
+            <article id="kuchnia">
+                <img src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" />
+                <div class="text">
+                    <h2>Italian food w kilku zdaniach</h2>
+                    <p>Kuchnia włoska charakteryzuje się korzystaniem z dużej ilości warzyw i przypraw takich jak oregano, bazylia, estragon, tymianek, a także używaniem parmezanu. To jedna z dwóch najbardziej popularnych kuchni europejskich obok kuchni francuskiej. Słynie głównie z potraw mącznych takich jak makarony, ale też z owoców morza.</p>
+                </div>
+            </article>
+            
+            <h1 id="recipe">Przepisy</h1>
+            <button onclick="showForm()" id="dodawaniePrzepisu">
+                Dodaj <br />
+                przepis
+              </button>
+            <section class="recipes">
+                <div class="blok" id="b0">
+                    <button class="showMore" onclick="showMore(0)"></button>
+                    <div class="fotos">
+                        <img class="foto0" id="f00" src="https://images.unsplash.com/photo-1552580715-4d9bc27f1e2f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1029&q=80" alt="">
+                        <img class="foto1" id="f01" src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                    </div>
+                    <button class="btn-remove">X</button>
+                    <div>
+                        <h3>Penne z kurczakiem i salami peperoni</h3>
+                        <div class="more" id="more0">
+                            <p>Makaron ugotuj al dente. Mięso i salami pokrój w paski. Kurczaka podsmaż na rozgrzanej patelni. Po chwili smażenia dodaj salami i posiekany czosnek. Wymieszaj wodę lub bulion ze śmietaną i koncentratem pomidorowym. Wlej sos na patelnię z mięsem, dodaj makaron i gotuj kilka minut. Smacznego :) </p>
+                            <h4>Składniki:</h4>
+                            <ul>
+                                    <li>makaron penne 200 g</li>
+                                    <li>pierś z kurczaka 150 g</li>
+                                    <li>salami peperoni 100 g</li>
+                                    <li>ząbki czosnku 3 szt.</li>
+                                    <li>koncentrat pomidorowy 1 łyżka</li>
+                                    <li>śmietana 150 ml</li>
+                                    <li>woda lub bulion 150 ml</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="blok" id="b1">
+                        <button class="showMore" onclick="showMore(1)"></button>
+                        <div class="fotos">
+                            <img class="foto0" id="f10" src="https://images.unsplash.com/photo-1506354666786-959d6d497f1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                            <img class="foto1" id="f11" src="https://images.unsplash.com/photo-1578616159678-2c09b28a70f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80" alt="">
+                        </div>
+                        <button class="btn-remove">X</button>
+                        <div>
+                            <h3>Pizza margherita z pomidorami</h3>
+                            <div class="more" id="more1">
+                                <p>Składniki na ciasto połącz ze sobą dobrze wyrabiając na stolnicy. Odstaw na 10 minut do lodówki. Następnie wyjmij do wyrośnięcia w ciepłym miejscu na 20 minut. Stolnicę podsyp mąką, rozwałkuj ciasto i umieść je na blasze. Posmaruj z wierzchu koncentratem pomidorowym, ułóż dookoła plastry pomidora na przemian z plastrami mozzarelli. Piecz w nagrzanym do 200 stopni piekarniku przez około 15 minut. Udekoruj listkami bazylii. Smacznego :)</p>
+                                <h4>Składniki:</h4>
+                                 <ul>
+                                    <li>ser mozzarella 2 szt.</li>
+                                    <li>pomidor 2 szt.</li>
+                                    <li>bazylia 1 pęczek</li>
+                                    <li>oliwa z oliwek 2 łyżki</li>
+                                    <li>mąka 1 kg</li>
+                                    <li>woda 500 ml</li>
+                                    <li>cukier 25 g</li>
+                                    <li>sól 5 g</li>
+                                    <li>drożdże 8 g</li>
+                                    <li>olej 50 ml</li>
+                                    <li>koncentrat pomidorowy 100 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="blok" id="b2">
+                        <button class="showMore" onclick="showMore(2)"></button>
+                        <div class="fotos">
+                            <img class="foto0" id="f20" src="https://images.unsplash.com/photo-1536964549204-cce9eab227bd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1868&q=80" alt="">
+                            <img class="foto1" id="f21" src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                        </div>
+                        <button class="btn-remove">X</button>
+                        <div>
+                            <h3>Calzone</h3>
+                            <div class="more" id="more2">
+                                <p>Mąkę, wodę, sól, olej i drożdże połącz ze sobą, wyrabiając na stolnicy. Odstaw na 10 minut do lodówki, wyjmij do wyrośnięcia w ciepłym miejscu na 20 minut. Pieczarki, paprykę i cebulę pokrój w paski, a następnie podsmaż. Koncentrat połącz z cukrem, solą, wodą, dopraw pieprzem. Dokładnie wymieszaj. Podziel ciasto na pół i rozwałkuj je na pizzę. Posmaruj sosem pomidorowym na połowie i rozłóż składniki oraz starty ser. Złóż ciasto na pół, nakrywając częścią bez dodatków wszystkie składniki. Zwiń dokładnie brzegi. Piecz w rozgrzanym do 210 stopni piekarniku przez 25 minut.</p>
+                                <h4>Składniki:</h4>
+                                <ul>
+                                        <li>pieczarki 0,5 kg</li>
+                                        <li>czerwona papryka 1 szt.</li>
+                                        <li>czerwona cebula 1 szt.</li>
+                                        <li>starty ser żółty 80 g</li>
+                                        <li>koncentrat pomidorowy 100 g</li>
+                                        <li>sól 1 łyżeczka</li>
+                                        <li>woda 500 ml</li>
+                                        <li>mąka 1 kg</li>
+                                        <li>olej 50 ml</li>
+                                        <li>drożdże 8 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="blok" id="b3">
+                        <button class="showMore" onclick="showMore(3)"></button>
+                        <div class="fotos">
+                            <img class="foto0" id="f30" src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1103&q=80" alt="">
+                            <img class="foto1" id="f31" src="https://images.unsplash.com/photo-1447279506476-3faec8071eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                        </div>
+                        <button class="btn-remove">X</button>
+                        <div>
+                            <h3>Tagliatelle z mięsem mielonym i mozzarellą</h3>
+                            <div class="more" id="more3">
+                                <p>Ugotuj makaron. Mozzarellę pokrój w paski. Drobno posiekaj czosnek i przesmaż na oleju przez 1-2 minuty. Dodaj mięso i dalej smaż aż utraci różowy kolor. Dopraw przyprawami do smaku. Podawaj z mozzarellą i bazylią. Smacznego :)</p>
+                                <h4>Składniki:</h4>
+                                <ul>
+                                        <li>makaron tagliatelle 400 g</li>
+                                        <li>mielona wołowina 400 g</li>
+                                        <li>mozzarella 1 szt.</li>
+                                        <li>czosnek 1 ząbek</li>
+                                        <li>świeża bazylia 2 łyżki</li>
+                                        <li>olej rzepakowy 1 łyżka</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="blok" id="b4">
+                        <button class="showMore" onclick="showMore(4)"></button>
+                        <div class="fotos">
+                            <img class="foto0" id="f40" src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                            <img class="foto1" id="f41" src="https://images.unsplash.com/photo-1498579150354-977475b7ea0b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                        </div>
+                        <button class="btn-remove">X</button>
+                        <div>
+                            <h3>Tagliatelle z krewetkami</h3>
+                            <div class="more" id="more4">
+                                <p>Czosnek posiekaj, podsmaż na patelni z oliwą z oliwek. Dodaj krewetki oraz pomidorki. Podsmażaj je 3-4 minuty. Na patelnię wlej białe wino, poczekaj aż odparuje. Zdejmij z palnika sos. Na patelnię z krewetkami przełóż ugotowany al dente makaron, wymieszaj składniki. Smacznego :)</p>
+                                <h4>Składniki:</h4>
+                                <ul>
+                                        <li>makaron 300 g</li>
+                                        <li>krewetki tiger 300 g</li>
+                                        <li>pomidorki koktajlowe 250 g</li>
+                                        <li>białe wino 50 ml</li>
+                                        <li>czosnek 1 ząbek</li>
+                                        <li>oliwa z oliwek</li>
+                                        <li>natka pietruszki</li>
+                                        <li>sól, pieprz</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+                <div class="blok" id="b5">
+                        <button class="showMore" onclick="showMore(5)"></button>
+                        <div class="fotos">
+                            <img class="foto0" id="f50" src="https://images.unsplash.com/photo-1559978137-8c560d91e9e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80" alt="">
+                            <img class="foto1" id="f51" src="https://images.unsplash.com/photo-1536622308015-0740925b8221?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="">
+                        </div>
+                        <button class="btn-remove">X</button>
+                        <div>
+                            <h3>Pizza sycylijska</h3>
+                            <div class="more" id="more5">
+                                <p>Pomidory pokrój w plastry, oliwki na połówki. Składniki na ciasto połącz wyrabiając na stolnicy, a następnie rozwałkuj. Posmaruj z wierzchu koncentratem, posyp serem, ułóż pomidory i oliwki. Piecz w nagrzanym do 200 stopni piekarniku około 20 minut. Podawaj polaną po wierzchu oliwą z oliwek. Smacznego :) </p>
+                                <h4>Składniki:</h4>
+                                <ul>
+                                        <li>starty ser mozzarella 200 g</li>
+                                        <li>pomidory 150 g</li>
+                                        <li>czarne oliwki 40 g</li>
+                                        <li>szynka 100 g</li>
+                                        <li>koncentrat pomidorowy 100 g</li>
+                                        <li>mąka 1 kg</li>
+                                        <li>woda 500 ml</li>
+                                        <li>cukier 25 g</li>
+                                        <li>sól 20 g</li>
+                                        <li>olej 50 ml</li>
+                                        <li>drożdże 8 g</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </section>
+
+        </main>
+        
+        
+        <hr id="line">
+        <footer id="Kontakt">
+        
+            <div class="logo2">ItalianFood</div>
+            <div class="other">
+                <p>Aleja Adama Mickiewicza 30, 30-059 Kraków</p>
+                <p>Tel: 12 617 22 22</p>
+            </div>
+            <div class="other">
+                <p>e-mail: ItalianFood@gmail.com</p>
+            </div>
+        </footer>
+
+        <div class="formularz">
+            <div class="form-page">
+              <h1>Twój przepis</h1>
+              <form action="post" id="form">
+                <input
+                  type="text"
+                  placeholder="Nazwa przepisu"
+                  id="nazwa"
+                  required
+                  minlength="3"
+                  maxlength="35"
+                />
+                
+                <input
+                  type="text"
+                  placeholder="Składniki i ilość (oddzielone przecinkiem)"
+                  id="skladniki"
+                  minlength="3"
+                  maxlength="80"
+                  required
+                />
+      
+                
+                <input type="url" placeholder="Obraz główny URL" id="url" required />
+                <input type="url" placeholder="Obraz otwierający przepis URL" id="url2" required />
+                
+      
+                <textarea
+                  name=""
+                  cols="10"
+                  rows="8"
+                  placeholder="Opis przepisu"
+                  id="opis"
+                  required
+                  minlength="10"
+                  maxlength="200"
+                ></textarea>
+                
+      
+                <button type="submit" id="submitBtn">Dodaj</button>
+              </form>
+            </div>
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous" ></script>
+    <script src="applications.js"></script>  
+    </body>
+</html>

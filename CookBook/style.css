@@ -1,0 +1,513 @@
+header{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    color:white;
+}
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position:top;
+    filter: brightness(70%);
+    border-radius:15px;
+}
+.logo1{
+    display:flex;
+    position: absolute;
+    font-size:65px;
+    font-family: "Cooper Black";
+    letter-spacing:2px;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    top: 10%;
+    left: 5%;
+}
+.header2 a{
+    text-decoration:none;
+    background:rgba(255,255,255,0.2);
+    border: 1px solid white;
+    color:white;
+    cursor: pointer;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    font-family: "Georgia";
+    font-weight:700;
+    padding: 8px 10px;
+    font-size:18px;
+    margin: 0 2%;
+    width: auto;
+}
+
+ol{
+    list-style-type:none;
+    position: absolute;
+    position: fixed;
+    z-index:4;
+    top: 10%;
+    right:8%;
+    padding:0;
+    margin:0;
+    background:rgba(90, 86, 86, 0.836);
+    border: 1px solid white;
+    color:white;
+    cursor: pointer;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    font-family: "Georgia";
+    font-weight:550;
+    font-size:18px;
+    height: 2em;
+    line-height: 2em;
+    text-align:center;
+}
+ol a {
+    display: block;
+    text-decoration:none;
+    color:white;
+    padding: 0 5px;
+}
+
+ol > li{
+    width: auto;
+    height: 2em;
+}
+
+ol > li:hover > a{
+    background:rgba(255,255,255,0.5);
+}
+ol > li:hover > ul{
+    display:block;
+}
+ol > li > ul{
+    display:none;
+    list-style-type:none;
+    padding: 10px 12px;
+    margin: 0;
+    padding: 0;
+}
+ol > li > ul > li{
+    position:relative;
+    background:rgba(90, 86, 86, 0.836);
+}
+ol > li > ul > li > a{
+    border: 1px solid white;
+
+}
+
+ol > li > ul > li:hover > a{
+    background:rgba(255,255,255,0.5);
+}
+
+.header2{
+    position:absolute;
+    text-align:center;
+    top:55%;
+    left:50%;
+    width:70%;
+    transform:translate(-50%, -50%);
+    font-weight:600;
+    font-family: "Georgia";
+
+}
+.header2 h3{
+   font-size: 26px; 
+   text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.header2 p{
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.8);
+    padding-bottom: 6%;
+    margin:auto;
+    font-size:16px;
+}
+main{
+    width:90%;
+    margin:auto;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}
+article{
+    display:flex;
+    width:100%;
+    justify-content:space-between;
+}
+#kuchnia img{
+    padding-left:0;
+    
+    width:50%;
+    height:auto;
+    object-fit:cover;
+    object-position: center;
+    border-radius:15px;
+}
+#kuchnia{
+    margin-top:7%;
+}
+#kuchnia .text{
+    padding-left:8%;
+}
+.text{
+    width:65%;
+}
+article h2{
+    font-size: 35px;
+    font-family: "Cooper Black";
+}
+article img{
+    width:38%;
+    width:50%;
+    height:auto;
+    object-fit:cover;
+    object-position: center;
+    border-radius:15px;
+}
+#Omnie .text {
+    padding-right: 8%;
+}
+.text p{
+    font-size: 20px;
+    font-family:"Calibri";
+    text-align:justify;
+}
+#recipe{
+    font-size:60px;
+    text-align:center;
+    padding: 5%;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    font-family: "Cooper Black";
+}
+.recipes{
+    margin-top:6%;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align:center;
+    column-gap:6%;
+}
+.blok{
+    display:grid;
+    grid-template-rows:35vh auto;
+    overflow:hidden;
+    position:relative;
+    box-shadow: 8px 4px 16px -2px rgba(90,70,69,0.5);
+    background-color:white;
+    border-radius:20px;
+    margin-top:10%;
+}
+#b1{
+   clear:left;
+}
+
+.foto{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center;
+}
+.fotos{
+    position:relative;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+}
+.foto0{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center;
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:1;
+    z-index:2;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.foto1{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position: center;
+    position:absolute;
+    left:0;
+    top:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.blok div{
+    text-align:left;
+    padding:15px;
+    font-family: "Georgia";
+}
+.blok h3{
+    text-align: center;
+}
+.showMore{
+    position:absolute;
+    height:100%;
+    width:100%;
+    display:none;
+    background: rgba(225,225,225,0.2);
+    text-align:center;
+    cursor:pointer;
+    color:white;
+    font-size:20px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+    font-family: "Calibri";
+    padding-bottom: 80%;
+    z-index:3;
+
+}
+.more{
+    display:none;
+}
+.btn-remove {
+    background: transparent;
+    border:none;
+    padding: 5px 15px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    color: rgb(255, 253, 253);
+    right: 0;
+    top: 0;
+    z-index: 3;
+}
+.blok div p{
+    text-align:justify;
+}
+
+.blok:hover button{
+    display:block;
+}
+
+body{
+    background-color:#EFEFEF;
+}
+footer{
+    display:flex;
+    justify-content:space-between;
+    width:90%;
+    margin:auto;
+    align-items:center;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    margin-top:5%;
+    margin-bottom:3%;
+}
+.logo2{
+    font-size:65px;
+    font-family: "Cooper Black";
+    letter-spacing:2px;
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+    margin-right:5%;
+}
+.other{
+    font-size:15px;
+    padding-right:10%;
+    font-family: "Georgia";
+}
+
+#line{
+    width:90%;
+    height:1px;
+    background:black;
+    margin-top:15vh;
+}
+/*przycisk do dodawania przepisów*/
+
+#dodawaniePrzepisu{
+    background:rgba(90, 86, 86, 0.836);
+    border-radius: 5px;
+    font-family: "Calibri";
+    padding: 8px;
+    font-weight: 700;
+    font-size:15px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    border: 1px solid white;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    top: 90%;
+    right: 0;
+    z-index: 4;
+}
+#dodawaniePrzepisu:hover{
+    background: rgba(214, 178, 17, 0.8);
+}
+
+/*formularz do dodawania przepisów*/
+
+.formularz{
+    position: fixed;
+    right: 6%;
+    z-index: 3;
+    top:10%;
+    width:60%;
+    height:80%;
+    background-color:rgb(207, 180, 25);
+    border-radius: 2%;
+    box-shadow: 1px 20px 100px 10px rgba(0,0,0,0.5);
+}
+.form-page{
+    width: 80%;
+    margin : auto;
+    height:90%;
+    margin-top:25px;
+    background:white;
+    text-align:center;
+    border-radius:2%;
+    box-shadow: 1px 20px 100px 10px rgba(0,0,0,0.5);
+    padding:2px;
+}
+
+.form-page input, textarea{
+    display:block;
+    width:90%;
+    margin: 0 auto;
+    padding:6px;
+    margin-top:6px;
+}
+.form-page h1{
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    font-family: "Georgia";
+    font-weight:700;
+}
+.form-page button{
+    margin-top:5%;
+    padding:8px;
+    background: rgba(225,225,225,0.2);
+    text-align:center;
+    cursor:pointer;
+    font-size:20px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    font-family: "Calibri";
+    border-radius: 10%;
+}
+.form-page button:hover{
+    background: rgba(85, 180, 22, 0.8);
+}
+
+
+/*for smartfons*/
+@media only screen and (max-width: 767px){
+
+    .recipes{
+        grid-template-columns: 1fr;
+        grid-gap:0;
+    }
+
+    article{
+        display:block;
+    }
+    
+    .text{
+        text-align:center;
+        width:100%;
+    }
+    
+    article img{
+        width:100%;
+        padding:0;
+    }
+    
+    .blok{
+        margin-top: 5%;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align:center;
+    }
+    .other{
+        margin-top:5%;
+        font-size:10px;
+    }
+    header{
+        display:block;
+    }
+    header p{
+        display:none;
+    }
+    .header2 h3{
+        font-size:16px;
+    }
+    .header2{
+        top:46vh;    
+    }
+    .header2 .button{
+        font-size:10px;
+    }
+    .logo1{
+        top:5vh;
+        font-size: 40px;
+    } 
+    .logo2{
+        font-size:40px;
+    }
+    ol{
+        top: 15vh;
+    }
+    #line{
+        margin-top:5vh;
+    }
+    #kuchnia img{
+        width:100%;
+        padding:0;
+        margin:0;
+    }
+    #kuchnia .text{
+        padding-left:0;
+    }
+    #Omnie .text{
+        padding-right:0;
+    }
+    .formularz{
+        width:90%;
+    }
+}
+/* for tablets*/
+@media only screen and (min-width:768px) and (max-width: 940px){
+
+    .recipes{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:3%;
+    }
+    footer {
+        margin-top:5%;
+        display: block;
+        text-align:center;
+    }
+    .other{
+        font-size:15px;
+    }
+    header{
+        display:block;
+    }
+    
+    .header2 h3{
+        font-size:20px;
+    }
+    .header2{
+        top:40vh;    
+    }
+    .header2 .button{
+        font-size:10px;
+    }
+    .logo1{
+        top:5vh;
+        font-size: 60px;
+    } 
+    .logo2{
+        font-size:50px;
+    }
+    ol{
+        top: 8vh;
+    }
+    
+    
+}
