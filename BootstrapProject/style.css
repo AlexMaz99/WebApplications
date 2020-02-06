@@ -1,0 +1,50 @@
+body{
+    background-color:rgb(221, 218, 209) ;
+    position: relative;
+}
+nav{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.navbar-brand {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+.nav-link:hover{
+    background-color: rgb(0, 0, 0);
+}
+.dropdown-item:hover{
+    background-color: rgb(201, 157, 37);
+}
+.jumbotron-fluid{
+    background: url("https://images.unsplash.com/photo-1544030622-5c2c58b1c463?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
+    background-size: cover;
+    background-position: top; 
+    color:white;
+}
+.jumbotron .container h1{
+    text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.jumbotron .container p{
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+.lead{
+    text-align:justify;
+}
+#form1{
+    display:none;
+}
+#formButton{
+    background-color:rgb(201, 157, 37) ;
+}
+#kontakt p{
+    font-size: 1.1rem;
+}
+#kontakt h1{
+    font-size:2.5rem;
+    background-color:rgb(201, 157, 37) ;
+}
+.carousel-indicators li{
+    background-color:black;
+    opacity: 0.3;
+}
