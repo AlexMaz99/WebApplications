@@ -1,0 +1,22 @@
+<div class="jumbotron col-10 offset-1 mt-5 text-center">
+    <h1 class="display-4">Witamy w Wiki!</h1>
+    <p class="lead">Wiki to aplikacja oferująca możliwość zapisów na kursy o różnej tematyce. </p>
+    <hr class="my-4">
+    <p>Dołącz do nas</p>
+    <div class="row">
+        <div class="col-10 offset-1">
+            <img class="img-fluid" src='https://images.unsplash.com/photo-1533022139390-e31c488d69e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80'>
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="btn-group col-4 offset-4" role="group" aria-label="Basic example">
+            <a class="btn btn-outline-success" (click)="true" routerLink="login">Zaloguj się</a>  
+            <a class="btn btn-outline-warning" (click)="true" routerLink="register">Zarejestruj się</a>     
+        </div>
+        <div class="col-8 offset-2 my-5">
+            <router-outlet *ngIf="true"></router-outlet>
+        </div>
+    </div>
+</div>

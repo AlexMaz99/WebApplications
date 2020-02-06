@@ -1,0 +1,9 @@
+<div class="scrollbar scrollbar-primary">
+  <div class="force-overflow">
+    <ul class="list-group">
+      <li *ngFor="let course of courses | async" class="list-group-item" routerLink="{{ course.idd }}">
+        Kurs: {{ course.name }}, {{ course.formOfCourse }}, Semestr: {{ course.semester }}
+      </li>
+    </ul>
+  </div>
+</div>

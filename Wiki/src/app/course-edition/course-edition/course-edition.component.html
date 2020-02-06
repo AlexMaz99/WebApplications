@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="btn-group col-4 offset-4" role="group" aria-label="Basic example">
+            <a class="btn btn-outline-success" (click)="true" routerLink="addCourse">Dodaj kurs</a>  
+            <a class="btn btn-outline-warning" (click)="true" routerLink="editCourse">Edytuj kurs</a> 
+            <a class="btn btn-outline-danger" (click)="true" routerLink="deleteCourse">Usuń kurs</a>     
+        </div>
+        <div class="col-8 offset-2 my-5">
+            <p *ngIf="!true" class="lead display-2">Choose an option</p>
+            <router-outlet *ngIf="true"></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="scrollbar scrollbar-primary">
+    <div class="force-overflow">
+        <ul class="list-group">
+            <li *ngFor="let course of courses | async" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+              Kurs: {{ course.name }}, {{ course.formOfCourse }}, Semestr: {{ course.semester }}
+              <button class="btn btn-danger" (click)="remove(course.idd)">Usuń kurs</button>
+            </li>
+        </ul>
+    </div>
+</div>

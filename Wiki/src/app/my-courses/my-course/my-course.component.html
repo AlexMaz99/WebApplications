@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-lg-4">
+                <img src="{{ image }}" class="card-img img-fluid" alt="..." style="height: 100%;">
+            </div>
+            <div class="col-lg-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{ name }}</h5>
+                    <p class="card-text">{{ description }}</p>
+
+                    <p class="card-text"><small class="text-muted">Liczba punktów ECTS: {{ ects }}</small></p>
+                    <p class="card-text"><small class="text-muted">Semestr: {{ semester }}</small></p>
+                    <p class="card-text"><small class="text-muted">Forma kursu: {{ formOfCourse }}</small></p>
+                    <p class="card-text"><small class="text-muted">Liczba gwiazdek: {{ grade }}</small></p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="!vote"class="container">
+    <div class="row ">
+      <div class="col-5 ">
+        <p class="lead  ml-0">Oceń kurs</p>
+      </div>
+      <div class="col-7 text-right">
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="5" (click)="rateCourse(5)">5 stars</label>
+          <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4" (click)="rateCourse(4)">4 stars</label>
+          <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3" (click)="rateCourse(3)">3 stars</label>
+          <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2" (click)="rateCourse(2)">2 stars</label>
+          <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1" (click)="rateCourse(1)">1 star</label>
+        </div>
+    </div>
+</div>
+  

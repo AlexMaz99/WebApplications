@@ -1,0 +1,24 @@
+<div class="container mt-4">
+    <div *ngIf="havingCourse()" class="row">
+        <p class="lead col-12 text-center">Moje kursy</p>
+    </div>
+    <div *ngIf="!havingCourse()" class="row">
+        <p class="lead col-12 text-center">Nie jesteś zapisany na żaden kurs</p>
+    </div>
+</div>
+
+<div *ngIf="havingCourse()" class="container mt-1 mb-2">
+    <div class="row pt-4 ">
+        <app-my-course class="col-12 mt-3"
+        *ngFor="let course of courses"
+        [image]="course.image"
+        [name]="course.name"
+        [grade]="course.grade"
+        [description]="course.description"
+        [semester]="course.semester"
+        [formOfCourse]="course.formOfCourse"
+        [ects]="course.ects"
+        [idd]="course.idd">
+    </app-my-course>
+    </div>
+</div>

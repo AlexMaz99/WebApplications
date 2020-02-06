@@ -1,0 +1,31 @@
+<div class="container my-5">
+    <div class="row">
+        <p class="lead col-12 text-center">Wyszukaj kurs</p>
+        <div class="col-md-3 mt-2">
+            <input [(ngModel)]="searchText0" placeholder="Nazwa" class="form-control">
+        </div>
+        <div class="col-md-3 mt-2">
+            <input [(ngModel)]="searchText1" placeholder="ECTS" class="form-control">
+        </div>
+        <div class="col-md-3 mt-2">
+            <input [(ngModel)]="searchText2" placeholder="Semestr" class="form-control">
+        </div>
+        <div class="col-md-3 mt-2">
+            <input [(ngModel)]="searchText3" placeholder="Ocena" class="form-control">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <app-course class="col-lg-3 col-md-4 col-sm-6 mt-3"
+            *ngFor="let course of courses | async | filter: searchText0 | filterByEcts: searchText1 | filterBySemester: searchText2 | filterByGrade: searchText3 | paginate: { itemsPerPage: 8, currentPage: p }"
+            [idd]="course.idd"
+            [image]="course.image"
+            [name]="course.name">
+        </app-course>
+        
+    </div>
+    <div class="col-4 my-5 mx-auto px auto offset-4">  <pagination-controls (pageChange)="p = $event" class="mx-auto"></pagination-controls></div>
+  
+</div>

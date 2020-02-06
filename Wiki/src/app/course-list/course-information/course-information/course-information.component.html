@@ -1,0 +1,30 @@
+<div class="container mt-5">
+    <div class="card mb-3">
+        <div class="row no-gutters">
+        <div class="col-lg-4">
+            <img src="{{ course.image }}" class="card-img img-fluid" alt="..." style="height: 100%;">
+        </div>
+        <div class="col-lg-8">
+            <div class="card-body">
+            <h5 class="card-title">{{ course.name }}</h5>
+            <p class="card-text">{{ course.description }}</p>
+
+            <p class="card-text"><small class="text-muted">Liczba punktów ECTS: {{ course.ects }}</small></p>
+            <p class="card-text"><small class="text-muted">Semestr: {{ course.semester }}</small></p>
+            <p class="card-text"><small class="text-muted">Forma kursu: {{ course.formOfCourse }}</small></p>
+            <p class="card-text"><small class="text-muted">Maksymalna liczba studentów: {{ course.maxStudents }}</small></p>
+            <p class="card-text"><small class="text-muted">Liczba wolnych miejsc: {{ course.maxStudents - course.numberOfStudents }}</small></p>
+            <p class="card-text"><small class="text-muted">Liczba gwiazdek: {{ course.grade }}</small></p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-center">
+            <a class="btn btn-outline-secondary ml-2"(click)="joinCourse()"style="cursor: pointer;">Zapisz się na kurs</a>
+        </div>
+    </div>
+</div>

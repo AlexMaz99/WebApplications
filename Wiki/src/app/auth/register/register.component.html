@@ -1,0 +1,12 @@
+
+<form>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" #userName required>
+    </div>
+    <div class="form-group">
+        <label for="password">Hasło</label>
+        <input type="password" class="form-control" id="userPassword" #userPassword required>
+    </div>
+    <button type="submit" (click)="authService.SignUp(userName.value, userPassword.value)" class="btn btn-warning">Zarejestruj się</button>
+</form>
